@@ -1,18 +1,14 @@
-import React from 'react'
-import './example.less'
-import Helmet from 'react-helmet'
-import { config } from 'config'
+import React from 'react';
+import './example.less';
+import Helmet from 'react-helmet';
+import { config } from 'config';
 
 export default class Less extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <Helmet
-          title={`${config.siteTitle} | Hi lessy friends`} 
-        />
-        <h1
-          className="the-less-class"
-        >
+        <Helmet title={`${config.siteTitle} | Hi lessy friends`} />
+        <h1 className="the-less-class">
           Hi lessy friends
         </h1>
         <div className="less-nav-example">
@@ -30,6 +26,6 @@ export default class Less extends React.Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }

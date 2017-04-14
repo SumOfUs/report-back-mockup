@@ -1,18 +1,14 @@
-import React from 'react'
-import './example.scss'
-import Helmet from 'react-helmet'
-import { config } from 'config'
+import React from 'react';
+import './example.scss';
+import Helmet from 'react-helmet';
+import { config } from 'config';
 
 export default class Sass extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <Helmet
-          title={`${config.siteTitle} | Hi sassy friends`} 
-        />
-        <h1
-          className="the-sass-class"
-        >
+        <Helmet title={`${config.siteTitle} | Hi sassy friends`} />
+        <h1 className="the-sass-class">
           Hi sassy friends
         </h1>
         <div className="sass-nav-example">
@@ -30,6 +26,6 @@ export default class Sass extends React.Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }

@@ -1,19 +1,18 @@
-import React from 'react'
-import styles from './example.module.css'
-import Helmet from 'react-helmet'
-import { config } from 'config'
+import React from 'react';
+import styles from './example.module.css';
+import Helmet from 'react-helmet';
+import { config } from 'config';
 
 export default class PostCSS extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <Helmet
-          title={`${config.siteTitle} | Hi PostCSSy friends`} 
-        />
+        <Helmet title={`${config.siteTitle} | Hi PostCSSy friends`} />
         <h1 className={styles['the-css-module-class']}>
           Hi CSS Modules friends
         </h1>
-        <p>You can use CSS Modules in Gatsby with Postcss, Less, and Sass. They
+        <p>
+          You can use CSS Modules in Gatsby with Postcss, Less, and Sass. They
           are enabled for any file in the format *.module.*
         </p>
         <div className={styles['css-modules-nav-example']}>
@@ -31,7 +30,6 @@ export default class PostCSS extends React.Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }
-
