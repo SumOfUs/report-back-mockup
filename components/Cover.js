@@ -12,6 +12,7 @@ export default props => (
       backgroundImage: `url(${props.backgroundImage})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
+      ...props.style,
     }}
   >
     {props.children}

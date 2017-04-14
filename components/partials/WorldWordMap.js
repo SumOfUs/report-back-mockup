@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '../Section';
 
 export default () => (
-  <Section>
+  <Section id="WorldWordMap">
     <h2>Here's how members like you describe SumOfUs:</h2>
     <img
       className="responsive-image"
