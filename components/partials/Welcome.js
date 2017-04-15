@@ -1,7 +1,7 @@
 import React from 'react';
 import Cover from '../Cover';
 import Container from '../Container';
-import HighlightedText from '../HighlightedText';
+import HighlightedTitle from '../HighlightedTitle';
 import { Icon } from 'react-fa';
 import { rhythm } from '../../utils/typography';
 
@@ -37,7 +37,8 @@ export default () => (
         We hope you find the results as inspiring as we do.
       </HighlightedHeader>
     </Container>
-    <h1
+    <a
+      href="#WorldWordMap"
       style={{
         position: 'absolute',
         bottom: 0,
@@ -49,6 +50,6 @@ export default () => (
       }}
     >
       <Icon name="chevron-down" />
-    </h1>
+    </a>
   </Cover>
 );

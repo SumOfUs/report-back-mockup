@@ -1,15 +1,13 @@
 import React from 'react';
 import Section from '../Section';
-import HighlightedText from '../HighlightedText';
+import HighlightedTitle from '../HighlightedTitle';
 import Card from '../Card';
 
 export default () => (
   <Section>
-    <h2>
-      <HighlightedText color="white" backgroundColor="#048bad">
-        These are some of the big issues that matter to us -- and what we're already up to in 2017:
-      </HighlightedText>
-    </h2>
+    <HighlightedTitle color="white" backgroundColor="#048bad">
+      These are some of the big issues that matter to us -- and what we're already up to in 2017:
+    </HighlightedTitle>
     <Card
       title="1. Fighting climate change and blocking oil and gas drilling"
       imageCaption="357,910 actions"
